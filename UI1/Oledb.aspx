@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Validate.aspx.cs" Inherits="Validate" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Oledb.aspx.cs" Inherits="Oledb" %>
 
 <!DOCTYPE html>
 
@@ -10,8 +10,9 @@
 <body>
     <form id="form1" runat="server">
     <div>
-    //暗示
+        <asp:GridView ID="GridView1" runat="server"></asp:GridView>
     </div>
+        <asp:Button ID="Button1" runat="server" Text="Button" />
     </form>
 </body>
 </html>

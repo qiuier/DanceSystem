@@ -13,15 +13,16 @@ public partial class Validate : System.Web.UI.Page
     {
         Random rd = new Random();
         string strCode = "";
-        for(int i= 0; i < 4; i++)
+        for (int i = 0; i < 4; i++)
         {
             strCode += rd.Next(10).ToString();
         }
         Session["Code"] = strCode;
-        Bitmap bmp = new Bitmap(80,20);
+        Bitmap bmp = new Bitmap(80, 20);
         Graphics g = Graphics.FromImage(bmp);
         Font fnt = new Font("微软雅黑", 10, FontStyle.Bold);
-        g.DrawString(strCode, fnt, Brushes.AliceBlue, 0, 0);
+        g.DrawString(strCode, fnt, Brushes.AliceBlue,0,0);
         bmp.Save(Response.OutputStream, ImageFormat.Gif);
+
     }
 }
